@@ -152,6 +152,10 @@ img {
     font-weight: 500;
 }
 
+.contacts-link {
+    gap: 10px;
+}
+
 /* -----------HERO----------- */
 
 .hero {
@@ -342,31 +346,32 @@ img {
 .regular-clients-list {
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center; 
+    gap: 30px; 
 }
 
-/* .regular-clients-item {
+.regular-clients-item {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-} */
-/* .regular-clients-link {
-        display: flex;
-        height: 92px;
-        width: 170px;
-        block-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        /* background-color: #F5F4FA;
-        margin-bottom: 30px; */
-        /* border-radius: 4px;
-        border: 1px solid #AFB1B8;
+} 
+.regular-clients-link {
+    display: flex;
+    height: 92px;
+    width: 170px;
+    block-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     
-        align-items: center;
-        justify-content: center;
-} */ */
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
 
 /* -----------FOOTER------------ */
