@@ -116,7 +116,7 @@ img {
     color: var(--accent-color);
 }
 
-.site-nav {
+.site-nav, .contacts{
     display: flex;
     gap: 50px;
 }
@@ -150,6 +150,22 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-weight: 500;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contacts-icon {
+    fill: var(--text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--accent-color);
 }
 
 
@@ -352,7 +368,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #AFB1B8;
     border-radius: 4px;
 } 
 .regular-clients-link {
@@ -367,13 +382,15 @@ img {
     justify-content: center;
 
     box-sizing: border-box;
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
-    fill: var(--icon-color);
+    color: var(--icon-color);
 }
 
 .regular-clients-icon {
     fill: currentColor;
 }
+
 .regular-clients-link:hover,
 .regular-clients-link:focus {
     border-color: var(--accent-color);
