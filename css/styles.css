@@ -152,9 +152,6 @@ img {
     font-weight: 500;
 }
 
-.contacts-link {
-    gap: 10px;
-}
 
 /* -----------HERO----------- */
 
@@ -348,6 +345,7 @@ img {
     align-items: center;
     justify-content: center; 
     gap: 30px; 
+    margin-top: 50px;
 }
 
 .regular-clients-item {
@@ -361,7 +359,7 @@ img {
     display: flex;
     height: 92px;
     width: 170px;
-    block-size: contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     
@@ -369,10 +367,23 @@ img {
     justify-content: center;
 
     box-sizing: border-box;
-    border: 1px solid #AFB1B8;
     border-radius: 4px;
+    fill: var(--icon-color);
 }
 
+.regular-clients-icon {
+    fill: currentColor;
+}
+.regular-clients-link:hover,
+.regular-clients-link:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* .regular-clients-link:hover .regular-clients-icon,
+.regular-clients-link:focus .regular-clients-icon{
+    color: var(--accent-color);
+} */
 
 /* -----------FOOTER------------ */
 .footer {
@@ -441,11 +452,6 @@ img {
     background-color: var(--accent-color);
 }
 
-.footer-all {
-    display: flex;
-    align-items: flex-start;
-}
-
 .footer-section-icons {
     margin-left: 70px;
 }
@@ -461,6 +467,11 @@ img {
     margin-bottom: 20px;
 }
 
+.footer > .container {
+    align-items: baseline;
+    gap: 70px;
+    display: flex;
+}
 /* -----------PORTFOLIO----------- */
 .portfolio {
     padding-top: 94px;
